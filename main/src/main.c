@@ -155,6 +155,7 @@ void MCU_CB_485_Byte_Transmitted(void)
   if (status == MCU_QUEUE_SUCCESS)
   {
     MCU_485_Transmit();
+    MCU_Deactivate_RED_LED();
   }
 }
 
