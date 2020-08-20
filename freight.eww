@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\Base-STM32L071-LIB\base-lib.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\main\main.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\morse-lib\morse-lib.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>
