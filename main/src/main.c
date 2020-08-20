@@ -235,10 +235,6 @@ void main(void)
       break;
     }
     
-    status = MCU_Queue_Push(&serial_output_queue, "Queue Error Counter : ", 22U);
-    status = MCU_Queue_Push_Decimal(&serial_output_queue, serial_output_queue.error_counter);
-    status = MCU_Queue_Push(&serial_output_queue, "\n\r", 2U);
-    
     while (global_tick_counter < 1000U)
     {
       ;
