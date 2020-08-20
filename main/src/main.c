@@ -162,7 +162,7 @@ void MCU_CB_485_Byte_Received(uint8_t * character)
 {
   if ((character[0] == '\r') || (character[0] == '\n'))
   {
-    MCU_Queue_Push(&eia485_output_queue, "Enter Pressed on EIA-485\r\n", 26U);
+    MCU_Queue_Push(&serial_output_queue, "Enter Pressed on EIA-485\r\n", 26U);
   }
 }
 
