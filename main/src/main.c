@@ -86,14 +86,21 @@ void MCU_CB_TIM2(void)
   status = MCU_Queue_Length(&serial_output_queue, &queue_length);
   if (status == MCU_QUEUE_SUCCESS)
   {
-    MCU_Activate_RED_LED();
-    MCU_EUART_Transmit();
+    if (queue_length > 0U)
+    {
+      MCU_Activate_RED_LED();
+      MCU_EUART_Transmit();
+    }
   }
   
   status = MCU_Queue_Length(&eia485_output_queue, &queue_length);
   if (status == MCU_QUEUE_SUCCESS)
   {
-    MCU_485_Transmit();
+    if (queue_length > 0U)
+    {
+      MCU_Activate_RED_LED();
+      MCU_485_Transmit();
+    }
   }
   
   if (morse_counter < 2U)
