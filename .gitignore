@@ -1,0 +1,9 @@
+main/Debug/
+main/Release/
+main/settings/
+settings/
+*.ewt
+*.eww
+*.ewd
+*.dep
+

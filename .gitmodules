@@ -1,0 +1,6 @@
+[submodule "BASE-STM32L071-LIB"]
+	url = https://github.com/phillips-connect/BASE-STM32L071-LIB/
+	path = BASE-STM32L071-LIB
+[submodule "MORSE-LIB"]
+	url = https://github.com/phillips-connect/MORSE-LIB/
+	path = MORSE-LIB
