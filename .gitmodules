@@ -4,3 +4,4 @@
 [submodule "MORSE-LIB"]
 	url = https://github.com/phillips-connect/MORSE-LIB/
 	path = MORSE-LIB
+	branch = initial
